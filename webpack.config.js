@@ -8,6 +8,17 @@ module.exports = {
         path: path.join(__dirname, 'dist'),
         filename: 'main.bundle-[hash].js'
     },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            }
+        ],
+    },
 
     mode: process.env.NODE_ENV || 'development',
 
