@@ -25,6 +25,13 @@ module.exports = {
                   { loader: 'sass-loader'},
                 ]
               },
+              {
+                test: /\.(png|jpg|gif)$/,
+                loader: 'file-loader',
+                options: {
+                  name: 'static/media/[name].[hash:8].[ext]',
+                },
+              },
         ],
     },
     resolve: {
