@@ -1,0 +1,11 @@
+{
+  "name": "ch1",
+  "version": "1.0.0",
+  "description": "Config init react with webpack and babel",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Oscar Corral Garcia",
+  "license": "ISC"
+}
